@@ -20,7 +20,6 @@ class ImageDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         previewImageView.contentMode = .scaleAspectFill
         setupData()
     }

@@ -94,3 +94,23 @@ extension ImageListViewController: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(imageDetailViewController, animated: true)
     }
 }
+
+
+#if DEBUG
+extension ImageListViewController {
+    var testHooks: TestHooks {
+        TestHooks(target: self)
+    }
+    struct TestHooks {
+        var target: ImageListViewController
+        var viewModel : ImageListViewModel? {
+            return target.viewModel
+        }
+        
+        func setViewModel(viewModel : ImageListViewModel?) {
+            target.viewModel = viewModel
+        }
+        
+    }
+}
+#endif

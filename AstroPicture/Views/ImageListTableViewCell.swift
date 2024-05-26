@@ -16,7 +16,6 @@ class ImageListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setupCell()
     }
     

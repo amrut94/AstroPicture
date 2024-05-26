@@ -31,11 +31,9 @@ class ImageListViewModel: ObservableObject {
                 case .finished:
                     break
                 case .failure(let error):
-                    // Handle error and update errorMessage property
                     self?.errorMessage = "Failed to load posts: \(error.localizedDescription)"
                 }
             }, receiveValue: { [weak self] apods in
-                // Update Images property with fetched data
                 DispatchQueue.main.async {
                     self?.apods = apods
                 }

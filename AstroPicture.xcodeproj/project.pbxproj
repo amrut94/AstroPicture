@@ -10,6 +10,13 @@
 		AC174A512C03552B008883C4 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC174A502C03552B008883C4 /* ImageDetailViewController.swift */; };
 		AC174A532C035555008883C4 /* ImageDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC174A522C035555008883C4 /* ImageDetailViewModel.swift */; };
 		AC5677412C037F7C00C9F52E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5677402C037F7C00C9F52E /* NetworkError.swift */; };
+		AC5677532C03885E00C9F52E /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5677522C03885E00C9F52E /* DateExtensionTests.swift */; };
+		AC5677562C038B6100C9F52E /* ImagesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5677552C038B6100C9F52E /* ImagesRepositoryTests.swift */; };
+		AC5677592C038D4B00C9F52E /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5677582C038D4B00C9F52E /* MockNetworkService.swift */; };
+		AC56775C2C03965500C9F52E /* ImageListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56775B2C03965500C9F52E /* ImageListViewModelTests.swift */; };
+		AC56775E2C039DC300C9F52E /* MockImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56775D2C039DC300C9F52E /* MockImagesRepository.swift */; };
+		AC5677602C039FD300C9F52E /* ImageListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56775F2C039FD300C9F52E /* ImageListViewControllerTests.swift */; };
+		AC5677632C03B44700C9F52E /* ImageDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5677622C03B44700C9F52E /* ImageDetailViewControllerTests.swift */; };
 		AC7D4A7B2C02815700C54F81 /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D4A7A2C02815700C54F81 /* ImageListViewModel.swift */; };
 		AC7D4A802C02868C00C54F81 /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D4A7F2C02868C00C54F81 /* Apod.swift */; };
 		AC7D4A832C0289E600C54F81 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D4A822C0289E600C54F81 /* NetworkServiceProtocol.swift */; };
@@ -29,10 +36,28 @@
 		ACA1AA1C2C01C530009F7027 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1AA1B2C01C530009F7027 /* ImageListViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AC56774A2C0387F800C9F52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA1A9F82C01BA78009F7027 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA1A9FF2C01BA78009F7027;
+			remoteInfo = AstroPicture;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AC174A502C03552B008883C4 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		AC174A522C035555008883C4 /* ImageDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewModel.swift; sourceTree = "<group>"; };
 		AC5677402C037F7C00C9F52E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AC5677462C0387F800C9F52E /* AstroPictureUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroPictureUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5677522C03885E00C9F52E /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
+		AC5677552C038B6100C9F52E /* ImagesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepositoryTests.swift; sourceTree = "<group>"; };
+		AC5677582C038D4B00C9F52E /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		AC56775B2C03965500C9F52E /* ImageListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModelTests.swift; sourceTree = "<group>"; };
+		AC56775D2C039DC300C9F52E /* MockImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockImagesRepository.swift; sourceTree = "<group>"; };
+		AC56775F2C039FD300C9F52E /* ImageListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewControllerTests.swift; sourceTree = "<group>"; };
+		AC5677622C03B44700C9F52E /* ImageDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		AC7D4A7A2C02815700C54F81 /* ImageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
 		AC7D4A7F2C02868C00C54F81 /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
 		AC7D4A822C0289E600C54F81 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
@@ -53,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC5677432C0387F800C9F52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACA1A9FD2C01BA78009F7027 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +97,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC5677472C0387F800C9F52E /* AstroPictureUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5677612C03B42900C9F52E /* View Controller */,
+				AC56775A2C03962D00C9F52E /* ViewModel */,
+				AC5677572C038D3200C9F52E /* Networking */,
+				AC56774F2C03881800C9F52E /* Extensions */,
+				AC5677542C038B3D00C9F52E /* Repository */,
+			);
+			path = AstroPictureUnitTests;
+			sourceTree = "<group>";
+		};
+		AC56774F2C03881800C9F52E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC5677522C03885E00C9F52E /* DateExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC5677542C038B3D00C9F52E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AC5677552C038B6100C9F52E /* ImagesRepositoryTests.swift */,
+				AC56775D2C039DC300C9F52E /* MockImagesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AC5677572C038D3200C9F52E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC5677582C038D4B00C9F52E /* MockNetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AC56775A2C03962D00C9F52E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC56775B2C03965500C9F52E /* ImageListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC5677612C03B42900C9F52E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC56775F2C039FD300C9F52E /* ImageListViewControllerTests.swift */,
+				AC5677622C03B44700C9F52E /* ImageDetailViewControllerTests.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		AC7D4A792C0280EA00C54F81 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA1AA022C01BA78009F7027 /* AstroPicture */,
+				AC5677472C0387F800C9F52E /* AstroPictureUnitTests */,
 				ACA1AA012C01BA78009F7027 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA1AA002C01BA78009F7027 /* AstroPicture.app */,
+				AC5677462C0387F800C9F52E /* AstroPictureUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +270,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC5677452C0387F800C9F52E /* AstroPictureUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC56774C2C0387F800C9F52E /* Build configuration list for PBXNativeTarget "AstroPictureUnitTests" */;
+			buildPhases = (
+				AC5677422C0387F800C9F52E /* Sources */,
+				AC5677432C0387F800C9F52E /* Frameworks */,
+				AC5677442C0387F800C9F52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC56774B2C0387F800C9F52E /* PBXTargetDependency */,
+			);
+			name = AstroPictureUnitTests;
+			productName = AstroPictureUnitTests;
+			productReference = AC5677462C0387F800C9F52E /* AstroPictureUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ACA1A9FF2C01BA78009F7027 /* AstroPicture */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACA1AA142C01BA7A009F7027 /* Build configuration list for PBXNativeTarget "AstroPicture" */;
@@ -213,6 +319,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					AC5677452C0387F800C9F52E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ACA1A9FF2C01BA78009F7027;
+					};
 					ACA1A9FF2C01BA78009F7027 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -235,11 +345,19 @@
 			projectRoot = "";
 			targets = (
 				ACA1A9FF2C01BA78009F7027 /* AstroPicture */,
+				AC5677452C0387F800C9F52E /* AstroPictureUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC5677442C0387F800C9F52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACA1A9FE2C01BA78009F7027 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -254,6 +372,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC5677422C0387F800C9F52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5677632C03B44700C9F52E /* ImageDetailViewControllerTests.swift in Sources */,
+				AC5677602C039FD300C9F52E /* ImageListViewControllerTests.swift in Sources */,
+				AC5677592C038D4B00C9F52E /* MockNetworkService.swift in Sources */,
+				AC5677532C03885E00C9F52E /* DateExtensionTests.swift in Sources */,
+				AC56775E2C039DC300C9F52E /* MockImagesRepository.swift in Sources */,
+				AC56775C2C03965500C9F52E /* ImageListViewModelTests.swift in Sources */,
+				AC5677562C038B6100C9F52E /* ImagesRepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACA1A9FC2C01BA78009F7027 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +409,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AC56774B2C0387F800C9F52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA1A9FF2C01BA78009F7027 /* AstroPicture */;
+			targetProxy = AC56774A2C0387F800C9F52E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		ACA1AA092C01BA78009F7027 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -297,6 +437,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AC56774D2C0387F800C9F52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2927LU2Y84;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amrut.AstroPictureUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroPicture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstroPicture";
+			};
+			name = Debug;
+		};
+		AC56774E2C0387F800C9F52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2927LU2Y84;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amrut.AstroPictureUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroPicture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstroPicture";
+			};
+			name = Release;
+		};
 		ACA1AA122C01BA7A009F7027 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +653,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC56774C2C0387F800C9F52E /* Build configuration list for PBXNativeTarget "AstroPictureUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC56774D2C0387F800C9F52E /* Debug */,
+				AC56774E2C0387F800C9F52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ACA1A9FB2C01BA78009F7027 /* Build configuration list for PBXProject "AstroPicture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

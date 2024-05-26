@@ -8,6 +8,6 @@
 import Foundation
 
 struct NetworkConstant {
-    static let apikey = "b1MC97WCfJcC9cuCprp1Kklw2gAXPOMZQTHlSkHn"
+    static let apikey = "xlUAF4KzDRdH6R2fSzExizmAnuhHLg0huam2wR6M"
     static let baseURL = "https://api.nasa.gov/planetary/apod"
 }
