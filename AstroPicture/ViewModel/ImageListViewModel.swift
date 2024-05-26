@@ -24,7 +24,8 @@ class ImageListViewModel: ObservableObject {
     func fetchImageData() {
         let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date()) ?? Date()
         let startDateString = startDate.dateString(withFormat: .yyyyMMdd)
-        let endDateString = Date().dateString(withFormat: .yyyyMMdd)
+        let endDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) ?? Date()
+        let endDateString = endDate.dateString(withFormat: .yyyyMMdd)
         repository.getImagesData(startDate: startDateString, endDate: endDateString)
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
