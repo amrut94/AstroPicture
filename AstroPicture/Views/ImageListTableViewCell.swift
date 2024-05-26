@@ -19,6 +19,7 @@ class ImageListTableViewCell: UITableViewCell {
         setupCell()
     }
     
+    //Configures the appearance of the table view cell.
     private func setupCell() {
         previewImageView.contentMode = .scaleAspectFill
         self.selectionStyle = .none

@@ -37,8 +37,8 @@ final class ImageDetailViewControllerTests: XCTestCase {
         try? super.tearDownWithError()
     }
 
-    func testSetupData() {
-        viewController.setupData()
+    func testViewDidLoad() {
+        viewController.viewDidLoad()
         XCTAssertEqual(viewController.titleLabel.text, apod.title)
         XCTAssertEqual(viewController.dateLabel.text, apod.date)
         XCTAssertEqual(viewController.descriptionLabel.text, apod.explanation)

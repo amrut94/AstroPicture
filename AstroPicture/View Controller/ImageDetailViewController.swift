@@ -10,7 +10,8 @@ import SDWebImage
 
 class ImageDetailViewController: UIViewController {
     static let identfire = "ImageDetailViewController"
-    
+   
+    // MARK: @IBOutles
     @IBOutlet weak var previewImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -18,13 +19,15 @@ class ImageDetailViewController: UIViewController {
     
     var viewModel: ImageDetailViewModel?
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         previewImageView.contentMode = .scaleAspectFill
         setupData()
     }
     
-    func setupData() {
+    //setup data for display
+    private func setupData() {
         let apod = viewModel?.apod
         previewImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
         previewImageView.sd_setImage(with: URL(string: apod?.url ?? ""), placeholderImage: UIImage(named: "cell_placeholder"))

@@ -11,13 +11,15 @@ import SDWebImage
 
 class ImageListViewController: UIViewController {
     
-    //MARK: @IBOutles
+    // MARK: @IBOutles
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    // MARK: - Private Properties
     private var viewModel: ImageListViewModel?
     private var cancellables = Set<AnyCancellable>()
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +32,8 @@ class ImageListViewController: UIViewController {
         viewModel?.fetchImageData()
     }
     
+    // MARK: - Private Methods
+    //Configures delegates and datasouce of table view.
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -40,6 +44,7 @@ class ImageListViewController: UIViewController {
     }
     
     private func bindViewModel() {
+        // Subscribe to view model updates
         viewModel?.$apods
             .sink { [weak self] _ in
                 DispatchQueue.main.async {
@@ -51,6 +56,7 @@ class ImageListViewController: UIViewController {
             }
             .store(in: &cancellables)
         
+        // Subscribe to view model error messages
         viewModel?.$errorMessage
             .sink { [weak self] errorMessage in
                 DispatchQueue.main.async {
@@ -62,7 +68,8 @@ class ImageListViewController: UIViewController {
             }
             .store(in: &cancellables)
     }
-    
+
+    // Display error message in an alert
     private func showError(_ message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -70,7 +77,7 @@ class ImageListViewController: UIViewController {
     }
 }
 
-//MARK: - UICollection View Delegate and DataSource
+// MARK: - Table View Delegate and DataSource
 extension ImageListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel?.apods.count ?? 0
@@ -95,6 +102,7 @@ extension ImageListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: - Test Hooks
 
 #if DEBUG
 extension ImageListViewController {

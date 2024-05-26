@@ -14,6 +14,10 @@ enum HTTPMethod: String {
 }
 
 class NetworkService {
+
+    /// Performs an HTTP request using the provided URLRequest and publishes the response data as a generic type.
+    /// - Parameter request: The URLRequest object representing the HTTP request to be performed.
+    /// - Returns: A publisher emitting the decoded response data as the specified generic type or an error.
     func performRequest<T>(from request: URLRequest) -> AnyPublisher<T, any Error> where T : Decodable {
         return URLSession.shared.dataTaskPublisher(for: request)
             .tryMap { output in
