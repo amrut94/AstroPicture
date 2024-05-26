@@ -24,7 +24,7 @@ class ImageListViewController: UIViewController {
         super.viewDidLoad()
         
         viewModel = ImageListViewModel()
-        self.title = "Astor Picture"
+        self.title = "Astro Picture"
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
         setupTableView()
